@@ -1,0 +1,1458 @@
+{
+	"info": {
+		"_postman_id": "11f02384-de6e-4064-81bf-648e0efc37b0",
+		"name": "weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27917542"
+	},
+	"item": [
+		{
+			"name": "волчанск позитивный 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=ru_Ru&limit=1&hours=true&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск позитивный 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=ru_Ru&limit=7&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск позитивный 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=ru_Ru&limit=7&hours=false&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск позитивный 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=ru_Ru&limit=7&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "волчанск негативный 1 - превышен лимит дней",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=ru_Ru&limit=25&hours=true&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск негативный 2 - белорусский домен для России",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=60.0451&lang=be_BY&limit=2&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "be_BY"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск негативный 3 - отрицательная широта",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=-59.5616&lon=60.0451&lang=ru_Ru&limit=7&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск негативный 4 - отрицательная долгота",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=-60.0451&lang=ru_Ru&limit=7&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "-60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск негативный 5 - доступ к платному режиму",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.weather.yandex.ru/v2/informers?lat=59.5616&lon=-60.0451&lang=ru_Ru&limit=7&hours=false&extra=true",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"yandex",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"informers"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "-60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Волчанск негативный 6 - неправильный ключ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key1}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=59.5616&lon=-60.0451&lang=ru_Ru&limit=7&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.5616"
+						},
+						{
+							"key": "lon",
+							"value": "-60.0451"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "7"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - позитивный 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=ru_Ru&limit=1&hours=true&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - позитивный 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=ru_Ru&limit=1&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - позитивный 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=ru_Ru&limit=1&hours=false&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - позитивный 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=ru_Ru&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=-55.4541&lon=37.3634&lang=ru_Ru&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=-37.3634&lang=ru_Ru&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "-37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_Ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=en_ru&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "en_ru"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=en_ru&limit=12&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "en_ru"
+						},
+						{
+							"key": "limit",
+							"value": "12"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Kvey}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=55.4541&lon=37.3634&lang=ru_ru&limit=12&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "ru_ru"
+						},
+						{
+							"key": "limit",
+							"value": "12"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Штаб квартира Яндекс - negative 6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.weather.yandex.ru/v2/informers?lat=55.4541&lon=37.3634&lang=en_ru&limit=12&hours=true&extra=false",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"yandex",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"informers"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "55.4541"
+						},
+						{
+							"key": "lon",
+							"value": "37.3634"
+						},
+						{
+							"key": "lang",
+							"value": "en_ru"
+						},
+						{
+							"key": "limit",
+							"value": "12"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google позитивный 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google позитивный 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=3&hours=true&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google позитивный 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=false&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google позитивный 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=false&extra=true",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=-37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=17&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "17"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 4",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=ru_US&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "ru_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Ky}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=true&extra=false",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google negative 6",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Yandex-API-Key",
+						"value": "{{Key}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.weather.yandex.ru/v2/informers?lat=37.42013215582232&lon=-122.0764346539094&lang=en_US&limit=1&hours=true&extra=false",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"yandex",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"informers"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "37.42013215582232"
+						},
+						{
+							"key": "lon",
+							"value": "-122.0764346539094"
+						},
+						{
+							"key": "lang",
+							"value": "en_US"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "hours",
+							"value": "true"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Key",
+			"value": "7fe6b02e-d88c-4c89-b892-2eabfb43a157",
+			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://api.weather.yandex.ru/v2/forecast",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "X-Yandex-API-Key: 7fe6b02e-d88c-4c89-b892-2eabfb43a157",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "token1",
+			"value": "7fe6b02e-d88c-4c89-b892-2eabfb43a157",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
